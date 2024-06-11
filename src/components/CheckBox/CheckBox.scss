@@ -1,0 +1,14 @@
+@import '../../colors.scss';
+
+.CheckBox{
+    border: 2px solid $darkgray;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    &[data-active='true']{
+        background-image: url('../../assets/check.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

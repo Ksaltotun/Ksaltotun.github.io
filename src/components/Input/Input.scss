@@ -1,0 +1,23 @@
+@import '../../colors.scss';
+
+.Input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: $lightblue;
+    color: $blue;
+    font-size: 18px;
+    box-shadow: 0px 10px 13px -4px $boxShadow;
+    margin-bottom: 10px;
+    border: none;
+    &::-webkit-input-placeholder{
+        color: $blue;
+    };
+    &::-moz-placeholder{
+        color: $blue;
+    };
+}
+
+

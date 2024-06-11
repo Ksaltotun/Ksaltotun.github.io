@@ -1,0 +1,58 @@
+@import '../../colors.scss';
+
+.LoginForm {
+    height: 575px;
+    width: 500px;
+    border: 1px solid $black;
+    background-color: $lightBack;
+    padding: 24px;
+
+    .XbuttonBlock {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 18px;
+    }
+
+    .DataBlock {
+        display: grid;
+        grid-row-gap: 18px;
+
+        .TitleBlock span {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            text-align: left;
+            text-shadow: 4px 4px 4px $blackShadow;
+        }
+
+        .RememberBlock {
+            display: grid;
+            grid-template-columns: 24px 1fr;
+            grid-column-gap: 14px;
+            align-items: center;
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: $darkgray;
+                text-shadow: 4px 4px 4px $blackShadow;
+            }
+        }
+
+        .RestoreBlock {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $blue;
+            text-shadow: 4px 4px 4px $blackShadow;
+            margin-bottom: 24px;
+        }
+
+        .ButtonBlock {
+            display: grid;
+            grid-row-gap: 4px;
+        }
+
+    }
+}
