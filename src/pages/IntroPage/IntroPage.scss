@@ -1,0 +1,81 @@
+@import '../../colors.scss';
+
+.IntroPage {
+    width: 100vw;
+    height: 100vh;
+    padding: 72px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .ContentBox {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        box-shadow: 0px 4px 4px $blackShadow;
+        background-color: $white;
+
+        .PicktureBlock {
+            max-width: 900px;
+            min-width: 800px;
+            justify-self: self-end;
+        }
+
+        .DescribeBlock {
+            max-width: 900px;
+            background-color: $ligtBlueBackground;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20% 0 10%;
+
+        }
+
+        .DescribeBlock>div {
+            padding-bottom: 18px;
+        }
+    }
+
+    .TextBlock {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        color: $grayText;
+    }
+
+    .TitleBlock {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 48px;
+        color: $blue;
+    }
+
+    .ButtonBlock {
+        padding: 12px 12px 12px 24px;
+        border-radius: 64px;
+        background-color: $buttonBlue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        font-weight: 500;
+        font-size: 18px;
+        max-width: 340px;
+
+        .ButtonPicture {
+            width: 44px;
+            height: 44px;
+        }
+
+    }
+
+    .PicktureBlock {
+        background-image: url('../../assets/picture.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
