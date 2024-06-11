@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "build/",
   "dependencies": {
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.3",
