@@ -1,12 +1,13 @@
 export type InputProps = {
     type: 'text' | 'password',
-    placeholder: string
+    placeholder: string,
+    changeFunction: Function
 }
 
 export type ButtonProps = {
     type: 'login' | 'signin',
     text: string,
-    action: Function
+    routeTo: 'intro' | '/' | null
 }
 
 
