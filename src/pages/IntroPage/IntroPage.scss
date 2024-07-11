@@ -17,10 +17,6 @@
         box-shadow: 0px 4px 4px $blackShadow;
         background-color: $white;
 
-        @media (min-width: $l) {
-            gap: 16px;
-        }
-
         @media (min-width: $m) {
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
@@ -32,10 +28,6 @@
         }
 
         .PicktureBlock {
-            max-width: 900px;
-            min-width: 800px;
-            justify-self: self-end;
-
             @media (min-width: $s) and (max-device-width: $m) {
                 min-width: 100%;
                 justify-self: center;
@@ -43,7 +35,6 @@
         }
 
         .DescribeBlock {
-            max-width: 900px;
             background-color: $ligtBlueBackground;
             display: flex;
             flex-direction: column;
