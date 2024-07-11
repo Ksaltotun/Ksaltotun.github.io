@@ -13,15 +13,20 @@
         height: 100%;
         border-radius: 10px;
         display: grid;
-        
+
         box-shadow: 0px 4px 4px $blackShadow;
         background-color: $white;
-        @media (min-width: $m){
+
+        @media (min-width: $l) {
+            gap: 16px;
+        }
+
+        @media (min-width: $m) {
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
         }
 
-        @media (min-width: $s) and (max-device-width: $m){
+        @media (min-width: $s) and (max-device-width: $m) {
             grid-template-columns: 1fr;
             grid-template-rows: max-content 1fr;
         }
@@ -30,9 +35,10 @@
             max-width: 900px;
             min-width: 800px;
             justify-self: self-end;
-            @media (min-width: $s) and (max-device-width: $m){
+
+            @media (min-width: $s) and (max-device-width: $m) {
                 min-width: 100%;
-                justify-self: center;                
+                justify-self: center;
             }
         }
 
@@ -43,10 +49,12 @@
             flex-direction: column;
             justify-content: center;
             padding: 0 20% 0 10%;
-            @media (min-width: $s) and (max-device-width: $m){
-               padding: 4px;               
+
+            @media (min-width: $s) and (max-device-width: $m) {
+                padding: 4px;
             }
-            @media (max-device-width: $s){
+
+            @media (max-device-width: $s) {
                 align-items: center;
                 padding: 24px;
             }
@@ -83,7 +91,7 @@
         font-weight: 500;
         font-size: 18px;
         max-width: 340px;
-      
+
         .ButtonPicture {
             width: 44px;
             height: 44px;
@@ -99,4 +107,3 @@
     }
 
 }
-
