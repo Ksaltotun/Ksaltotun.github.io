@@ -5,9 +5,9 @@ export type InputProps = {
 }
 
 export type ButtonProps = {
-    type: 'login' | 'signin',
+    type: 'login' | 'signin' | 'increment',
     text: string,
-    routeTo: 'intro' | '/' | null
+    routeTo?: 'main' | '/' | null
 }
 
 
