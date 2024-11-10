@@ -5,6 +5,8 @@ import { Input } from '../../components/Input/Input'
 import { XButton } from '../../components/XButton/XButton'
 import './LoginForm.scss'
 import { useState } from 'react'
+import { useAppDispatch, useAppSelector } from '../../hooks/redux'
+import { usersSlice } from '../../redux/reducers/UserSlice'
 
 export const LoginForm: React.FC = () => {
 
@@ -12,11 +14,8 @@ export const LoginForm: React.FC = () => {
     const [password, setPassword] = useState('')
 
     return (
-        <form className='LoginForm'>
-            <div className='XbuttonBlock'>
-                <XButton/>
-            </div>
-            <div className='DataBlock'>
+        <div className='LoginForm'>
+           <div className='DataBlock'>
                 <div className='TitleBlock'>
                     <span>
                     Войти в систему
@@ -26,19 +25,13 @@ export const LoginForm: React.FC = () => {
                     <Input type='text' placeholder='Email/Телефон' changeFunction={setUserName}/>
                     <Input type='password' placeholder='Пароль' changeFunction={setPassword}/>
                 </div>
-                <div className='RememberBlock'>
-                    <CheckBox/>
-                    <span>Запомнить пароль</span>
-                </div>
-                <div className='RestoreBlock'>
-                    <span>Восстановить</span>
-                </div>
                 <div className='ButtonBlock'>
-                    <Button type='login' text={'Войти'} routeTo={password === 'password' ? 'intro' : null}/>
+                    <Button type='login' text={'Войти'} routeTo={'main'}/>
                     <Button type='signin' text={'Зарегистрироваться'} routeTo={null}/>
+                   
                 </div>
             </div>
-        </form>
+        </div>
     )
 }
 

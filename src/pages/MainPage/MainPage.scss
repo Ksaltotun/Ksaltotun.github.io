@@ -1,0 +1,42 @@
+@import '../../colors.scss';
+@import '../../sizes.scss';
+
+.MainPage {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: grid;
+
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header header"
+    "leftmenu content"
+    "footer footer";
+
+    .headMenuBox {
+        grid-area: header;
+        background-color: aquamarine;
+    }
+    .leftMenuBox{
+        background-color: cadetblue;
+        grid-area: leftmenu;
+    }
+    .contentBox{
+        background-color: yellow;
+        grid-area: content;
+    }
+
+    .footerBox {
+        background-color: aquamarine;
+        grid-area: footer;
+    }
+
+
+
+
+    
+
+}
