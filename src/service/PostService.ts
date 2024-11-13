@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-interface IPost {
+export interface IPost {
 
     "userId": number,
     "id": number,
@@ -11,14 +11,18 @@ interface IPost {
 
 export const postApi = createApi({
     reducerPath: '',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://jsonplaceholder.typicode.com' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'httP://localhost:5000' }),
     endpoints: (build) => ({
         fetchAllPosts: build.query<IPost[], number>({
-            query: (limit: number = 5) => ({
+            query: () => ({
                 url: '/posts',
-                params: {
-                    _limit: limit
-                },
+                method: 'GET'
+            })
+        }),
+        createPost: build.mutation<IPost, IPost>({
+            query: (post) => ({
+                url: '/posts',
+                body: post,
                 method: 'POST'
             })
         })
