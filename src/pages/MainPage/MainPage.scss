@@ -27,8 +27,13 @@
     .contentBox{
         background-color: yellow;
         grid-area: content;
+        background-image: url(../../assets/pc.svg);
+       
     }
 
+    #pcScreen{
+        color: red;
+    }
     .footerBox {
         background-color: aquamarine;
         grid-area: footer;

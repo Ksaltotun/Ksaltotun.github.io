@@ -28,7 +28,7 @@ const handdleCreate = async () => {
                <div className="navButtons">Че-то там</div>
                <div className="navButtons">Подтянуть ченить</div> 
             </aside>
-            <section className='contentBox'>
+            <section className='contentBox' >
                 <button onClick={handdleCreate}>
                     Click!
                 </button>
